@@ -1,0 +1,17 @@
+{
+  "name": "base_ubuntu",
+  "description": "Base role applied to all nodes.",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "chef_client": {
+      "interval": "30",
+      "splay": "10",
+      "config": {
+        "chef_server_url": "https://ip-10-152-150-67.ap-northeast-1.compute.internal/organizations/suguru"
+      }
+    }
+  },
+  "run_list":[
+    "recipe[chef-client]"
+  ]
+}
