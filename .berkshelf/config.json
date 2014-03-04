@@ -1,0 +1,16 @@
+{
+  "chef": {
+    "chef_server_url": "https://ip-10-152-150-67.ap-northeast-1.compute.internal/organizations/suguru",
+    "validation_client_name": "suguru-validator",
+    "validation_key_path": ".chef/suguru-validator.pem",
+    "client_key": ".chef/suguru.pem",
+    "node_name": "suguru"
+  },
+  "vagrant": {
+    "vm": {
+      "box": "opscode-ubuntu-12.04-i386",
+      "box_url": "https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04-i386_provisionerless.box",
+      "provision": "chef_client"
+    }
+  }
+}
