@@ -16,6 +16,11 @@
         "address_bind": "0.0.0.0"
       },
       "maxconn": "100"
+    },
+    "push_jobs": {
+      "whitelist": {
+        "haproxy-restart": "service haproxy restart"
+      }
     }
   },
   "run_list":[

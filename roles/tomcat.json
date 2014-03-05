@@ -11,7 +11,12 @@
       }
     },
     "tomcat":{
-      "port": "8888"
+      "port": "9999"
+    },
+    "push_jobs": {
+      "whitelist": {
+        "tomcat-restart": "service tomcat restart"
+      }
     }
   },
   "run_list":[

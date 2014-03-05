@@ -9,9 +9,17 @@
       "config": {
         "chef_server_url": "https://ip-10-152-150-67.ap-northeast-1.compute.internal/organizations/suguru"
       }
+    },
+    "push_jobs": {
+      "package_url": "https://s3-ap-northeast-1.amazonaws.com/cl32014/opscode-push-jobs-client_1.0.1-1.ubuntu.12.04_amd64.deb",
+      "whitelist": {
+        "chef-client": "chef-client",
+        "chef-client-delay": "sleep 60 && chef-client"
+      }
     }
   },
   "run_list":[
-    "recipe[chef-client]"
+    "recipe[chef-client]",
+    "recipe[push-jobs]"
   ]
 }
